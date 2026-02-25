@@ -1250,6 +1250,179 @@ a:hover {
     color: var(--accent-primary);
 }
 
+/* --- Stagecraft Section --- */
+.stagecraft-definition {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px 36px;
+    margin-bottom: 40px;
+}
+
+.stagecraft-equation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.stagecraft-label {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 900;
+    color: var(--accent-primary);
+}
+
+.stagecraft-equals {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    color: var(--text-muted);
+}
+
+.stagecraft-value {
+    font-family: var(--font-mono);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: var(--accent-secondary);
+    background: rgba(123, 47, 247, 0.1);
+    padding: 6px 18px;
+    border-radius: 6px;
+    border: 1px solid rgba(123, 47, 247, 0.3);
+}
+
+.stagecraft-body p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.stagecraft-distinction {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 3px solid var(--accent-primary);
+}
+
+.stagecraft-distinction p {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.stagecraft-distinction strong {
+    color: var(--accent-danger);
+}
+
+.stagecraft-distinction em {
+    color: var(--accent-success);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.stagecraft-stack {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 36px;
+}
+
+.stagecraft-stack h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.stack-tree {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+}
+
+.stack-root {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    background: rgba(0, 212, 255, 0.06);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.stack-layers {
+    padding-left: 12px;
+    border-left: 2px solid var(--border-color);
+    margin-left: 16px;
+}
+
+.stack-layer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+    position: relative;
+}
+
+.stack-layer.last {
+    border-bottom: none;
+}
+
+.stack-connector {
+    width: 20px;
+    height: 2px;
+    background: var(--border-color);
+    flex-shrink: 0;
+}
+
+.stack-layer.last .stack-connector {
+    background: var(--accent-secondary);
+}
+
+.stack-key {
+    font-weight: 600;
+    color: var(--accent-success);
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.stack-arrow {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.stack-desc {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .stagecraft-definition {
+        padding: 28px 20px;
+    }
+
+    .stagecraft-equation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .stagecraft-stack {
+        padding: 24px 16px;
+    }
+
+    .stack-layer {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .stack-key {
+        min-width: auto;
+    }
+}
+
 /* --- Footer --- */
 footer {
     position: relative;
