@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proto-Politics | Gaming as Proto-Politics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">&#9670;</span>
+            <span class="brand-text">PROTO<span class="accent">POLITICS</span></span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#intro" class="nav-link">Setup</a></li>
+            <li><a href="#section1" class="nav-link">Masks</a></li>
+            <li><a href="#section2" class="nav-link">Stories</a></li>
+            <li><a href="#section3" class="nav-link">Vigilance</a></li>
+            <li><a href="#section4" class="nav-link">Ethics</a></li>
+            <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+        <div class="hero-content">
+            <div class="hero-badge">Saskatchewan 2026</div>
+            <h1 class="hero-title">
+                <span class="line1">Gaming as</span>
+                <span class="line2">Proto-<span class="glitch" data-text="Politics">Politics</span></span>
+            </h1>
+            <p class="hero-subtitle">Non-School Skills in a Remote Learning World</p>
+            <p class="hero-desc">How kids like Liam (13) and Jackson (12) are forging essential future skills through online gaming &mdash; layered with the realities of remote school.</p>
+            <a href="#intro" class="cta-btn">
+                <span>Start Exploring</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-card liam-card">
+                <div class="avatar-icon">&#127918;</div>
+                <div class="avatar-name">Liam, 13</div>
+                <div class="avatar-aliases">
+                    <span class="alias">ShadowStriker47</span>
+                    <span class="alias">GuildWeaver</span>
+                    <span class="alias">EchoLurker</span>
+                </div>
+            </div>
+            <div class="avatar-card jackson-card">
+                <div class="avatar-icon">&#128187;</div>
+                <div class="avatar-name">Jackson, 12</div>
+                <div class="avatar-aliases">
+                    <span class="alias">GhostRipper88</span>
+                    <span class="alias">CrewAlly42</span>
+                    <span class="alias">SuburbStrategist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">The Setup &amp; Why It Matters</h2>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-scene fade-in">
+                    <div class="scene-icon">&#128218;</div>
+                    <h3>The Scene</h3>
+                    <p>Liam in the living room, tablet glowing, juggling Fortnite and Zoom tabs. Upstairs, Jackson in his bedroom, laptop humming through Valorant or The Sims 4.</p>
+                </div>
+                <div class="intro-scene fade-in">
+                    <div class="scene-icon">&#127979;</div>
+                    <h3>School System</h3>
+                    <p>Saskatchewan's remote school &mdash; endless Google Classroom modules, glitchy calls on prairie ecology &mdash; drills basics like math and history.</p>
+                </div>
+                <div class="intro-scene fade-in">
+                    <div class="scene-icon">&#127775;</div>
+                    <h3>The Real Training</h3>
+                    <p>Gaming forges "proto-political" chops: creating persistent identities across networks, like future actors managing sock puppets for influence.</p>
+                </div>
+            </div>
+
+            <div class="skills-overview fade-in">
+                <h3>Skills Schools Don't Teach</h3>
+                <div class="skills-wheel">
+                    <div class="skill-node" data-skill="compartmentalization">
+                        <div class="skill-icon">&#128373;</div>
+                        <span>Compartmentalization</span>
+                    </div>
+                    <div class="skill-node" data-skill="narrative">
+                        <div class="skill-icon">&#128214;</div>
+                        <span>Narrative Adaptability</span>
+                    </div>
+                    <div class="skill-node" data-skill="vigilance">
+                        <div class="skill-icon">&#128065;</div>
+                        <span>Digital Vigilance</span>
+                    </div>
+                    <div class="skill-node" data-skill="ethics">
+                        <div class="skill-icon">&#9878;</div>
+                        <span>Ethical Navigation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sask-dlc-banner fade-in">
+                <div class="dlc-badge">SASK DLC</div>
+                <p>Remote learning amps it up &mdash; deadlines clash with raids, teachers ping for attention (coercivity), forcing time management and autonomy to carve play space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Compartmentalization -->
+    <section id="section1" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <span class="section-tag">Section 1</span>
+                <h2 class="section-title">Compartmentalization</h2>
+                <p class="section-subtitle">The "Mask Management" Muscle</p>
+            </div>
+
+            <div class="core-idea fade-in">
+                <div class="idea-icon">&#128161;</div>
+                <p>Kids wall off personas to avoid leaks &mdash; a skill for real-life adaptation.</p>
+            </div>
+
+            <!-- Interactive persona switcher -->
+            <div class="persona-switcher fade-in">
+                <h3>Persona Switcher</h3>
+                <p class="switcher-hint">Click a persona to explore each identity</p>
+                <div class="switcher-tabs">
+                    <button class="persona-tab active" data-persona="shadow">ShadowStriker47</button>
+                    <button class="persona-tab" data-persona="guild">GuildWeaver</button>
+                    <button class="persona-tab" data-persona="ghost">GhostRipper88</button>
+                    <button class="persona-tab" data-persona="crew">CrewAlly42</button>
+                </div>
+                <div class="persona-panels">
+                    <div class="persona-panel active" id="persona-shadow">
+                        <div class="panel-header">
+                            <span class="panel-player">Liam</span>
+                            <span class="panel-game">Fortnite</span>
+                        </div>
+                        <div class="panel-style">Aggressive sniper</div>
+                        <div class="panel-quote">"You're done, noob."</div>
+                        <div class="panel-traits">
+                            <span class="trait hostile">Aggressive</span>
+                            <span class="trait hostile">Taunting</span>
+                            <span class="trait">Combat-focused</span>
+                        </div>
+                    </div>
+                    <div class="persona-panel" id="persona-guild">
+                        <div class="panel-header">
+                            <span class="panel-player">Liam</span>
+                            <span class="panel-game">Roblox</span>
+                        </div>
+                        <div class="panel-style">Warm diplomat</div>
+                        <div class="panel-quote">"Hey team, let's flank left."</div>
+                        <div class="panel-traits">
+                            <span class="trait friendly">Diplomatic</span>
+                            <span class="trait friendly">Supportive</span>
+                            <span class="trait">Alliance-builder</span>
+                        </div>
+                    </div>
+                    <div class="persona-panel" id="persona-ghost">
+                        <div class="panel-header">
+                            <span class="panel-player">Jackson</span>
+                            <span class="panel-game">Valorant</span>
+                        </div>
+                        <div class="panel-style">Lone agent sharpshooter</div>
+                        <div class="panel-quote">Silent. Precise. Deadly.</div>
+                        <div class="panel-traits">
+                            <span class="trait hostile">Lone wolf</span>
+                            <span class="trait">Precise</span>
+                            <span class="trait">Independent</span>
+                        </div>
+                    </div>
+                    <div class="persona-panel" id="persona-crew">
+                        <div class="panel-header">
+                            <span class="panel-player">Jackson</span>
+                            <span class="panel-game">Among Us</span>
+                        </div>
+                        <div class="panel-style">Loyal crewmate</div>
+                        <div class="panel-quote">Builds trust before subtle plays.</div>
+                        <div class="panel-traits">
+                            <span class="trait friendly">Loyal</span>
+                            <span class="trait friendly">Trustworthy</span>
+                            <span class="trait">Strategic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dlc-layer fade-in">
+                <div class="dlc-badge">SASK DLC</div>
+                <p>Remote classes add a third switch &mdash; muting Zoom for games, half-listening to lessons. A notification buzz? Prioritize: submit notes or finish the match? One slip risks bans or low grades.</p>
+            </div>
+
+            <div class="comparison-block fade-in">
+                <div class="compare-school">
+                    <h4>&#127979; School Says</h4>
+                    <p>Push one "true self" for projects.</p>
+                </div>
+                <div class="compare-vs">VS</div>
+                <div class="compare-game">
+                    <h4>&#127918; Games Teach</h4>
+                    <p>Iron focus, resilience, and self-control. Failure hones autonomy &mdash; no teacher oversees.</p>
+                </div>
+            </div>
+
+            <div class="payoff fade-in">
+                <h4>&#127942; Real-World Payoff</h4>
+                <p>Preps for job interviews (polished persona) vs. friend chats (raw you). In politics? Compartmentalize campaigns without fracturing core identity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Narrative Adaptability -->
+    <section id="section2" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <span class="section-tag">Section 2</span>
+                <h2 class="section-title">Narrative Adaptability</h2>
+                <p class="section-subtitle">Storytelling on the Fly</p>
+            </div>
+
+            <div class="core-idea fade-in">
+                <div class="idea-icon">&#128161;</div>
+                <p>Crafting evolving backstories to hook others, blending empathy and improv.</p>
+            </div>
+
+            <div class="story-cards fade-in">
+                <div class="story-card" id="storyLiam">
+                    <div class="story-front">
+                        <div class="story-avatar">&#128373;</div>
+                        <h4>Liam as EchoLurker</h4>
+                        <span class="story-game">Minecraft</span>
+                        <p class="flip-hint">Click to reveal strategy</p>
+                    </div>
+                    <div class="story-back">
+                        <h4>The Infiltrator</h4>
+                        <p>Lurks during "independent study," posing as a noob &mdash; <em>"Hey, how'd you make that redstone trap?"</em> &mdash; or trader with prairie nomad lore to infiltrate servers, gathering rival intel on hoards and raids.</p>
+                    </div>
+                </div>
+                <div class="story-card" id="storyJackson">
+                    <div class="story-front">
+                        <div class="story-avatar">&#127968;</div>
+                        <h4>Jackson as SuburbStrategist</h4>
+                        <span class="story-game">The Sims 4</span>
+                        <p class="flip-hint">Click to reveal strategy</p>
+                    </div>
+                    <div class="story-back">
+                        <h4>The Community Architect</h4>
+                        <p>Builds sim families with "community leader" histories &mdash; brokering deals while spying, texting Liam ideas to inspire Minecraft plots. Different games, same skill: improvised fiction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dlc-layer fade-in">
+                <div class="dlc-badge">SASK DLC</div>
+                <p>Essay prompts echo this &mdash; write a "fiction" story? Use game practice. But coercivity hits: teachers demand "show your work," forcing quick tweaks. Hundreds of chats balanced with homework during lunch under covers.</p>
+            </div>
+
+            <div class="comparison-block fade-in">
+                <div class="compare-school">
+                    <h4>&#127979; School Says</h4>
+                    <p>Fixate on essays and facts via lectures.</p>
+                </div>
+                <div class="compare-vs">VS</div>
+                <div class="compare-game">
+                    <h4>&#127918; Games Teach</h4>
+                    <p>Reading reactions, endless iterations from forums. Shared schemes strengthen bonds despite separate rooms.</p>
+                </div>
+            </div>
+
+            <div class="payoff fade-in">
+                <h4>&#127942; Real-World Payoff</h4>
+                <p>Seeds activist narratives or spy covers tomorrow. Levels empathy where play meets purpose, building invention while dodging check-ins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Digital Vigilance -->
+    <section id="section3" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <span class="section-tag">Section 3</span>
+                <h2 class="section-title">Digital Vigilance</h2>
+                <p class="section-subtitle">The "Burner Mindset"</p>
+            </div>
+
+            <div class="core-idea fade-in">
+                <div class="idea-icon">&#128161;</div>
+                <p>Spotting and mitigating threats in networks &mdash; proactive paranoia for security.</p>
+            </div>
+
+            <!-- Interactive threat assessment -->
+            <div class="threat-dashboard fade-in">
+                <h3>Threat Assessment Dashboard</h3>
+                <div class="threat-grid">
+                    <div class="threat-item" data-threat="slang">
+                        <div class="threat-icon">&#128172;</div>
+                        <h4>Shared Slang</h4>
+                        <p>Links accounts across platforms</p>
+                        <div class="threat-level high">HIGH RISK</div>
+                    </div>
+                    <div class="threat-item" data-threat="ip">
+                        <div class="threat-icon">&#127760;</div>
+                        <h4>IP Traces</h4>
+                        <p>Tracks physical location & identity</p>
+                        <div class="threat-level high">HIGH RISK</div>
+                    </div>
+                    <div class="threat-item" data-threat="wifi">
+                        <div class="threat-icon">&#128246;</div>
+                        <h4>Spotty Wi-Fi</h4>
+                        <p>Connection drops expose activity</p>
+                        <div class="threat-level medium">MED RISK</div>
+                    </div>
+                    <div class="threat-item" data-threat="logins">
+                        <div class="threat-icon">&#128274;</div>
+                        <h4>Overlapping Logins</h4>
+                        <p>School VPN clashes with game sessions</p>
+                        <div class="threat-level medium">MED RISK</div>
+                    </div>
+                    <div class="threat-item" data-threat="tabs">
+                        <div class="threat-icon">&#128441;</div>
+                        <h4>Open Tabs</h4>
+                        <p>Family accounts reveal hidden activity</p>
+                        <div class="threat-level low">LOW RISK</div>
+                    </div>
+                    <div class="threat-item" data-threat="anticheat">
+                        <div class="threat-icon">&#128302;</div>
+                        <h4>Anti-Cheat</h4>
+                        <p>Platform tracking & behavior monitoring</p>
+                        <div class="threat-level high">HIGH RISK</div>
+                    </div>
+                </div>
+                <div class="countermeasures">
+                    <h4>&#128737; Countermeasures</h4>
+                    <div class="counter-list">
+                        <span class="counter">Alt-emails</span>
+                        <span class="counter">Free VPNs</span>
+                        <span class="counter">Timed switches</span>
+                        <span class="counter">Tab hiding</span>
+                        <span class="counter">Discord coaching</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dlc-layer fade-in">
+                <div class="dlc-badge">SASK DLC</div>
+                <p>Competing priorities: 5 PM deadline vs. raid? One exposure means lost puppets or "distracted" flags to parents. Screen shares for learning YouTube guides during "free time."</p>
+            </div>
+
+            <div class="comparison-block fade-in">
+                <div class="compare-school">
+                    <h4>&#127979; School Says</h4>
+                    <p>"Be safe online" in basic modules.</p>
+                </div>
+                <div class="compare-vs">VS</div>
+                <div class="compare-game">
+                    <h4>&#127918; Games Teach</h4>
+                    <p>Curiosity + caution from resets and bans. No hand-holding &mdash; frustration becomes savvy.</p>
+                </div>
+            </div>
+
+            <div class="payoff fade-in">
+                <h4>&#127942; Real-World Payoff</h4>
+                <p>Breeds cybersecurity instincts for net wars. Teaches shadow teamwork. Preps for data leaks toppling careers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Ethical Navigation -->
+    <section id="section4" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <span class="section-tag">Section 4</span>
+                <h2 class="section-title">Ethical Navigation</h2>
+                <p class="section-subtitle">Gray Zones &amp; Moral Flexibility</p>
+            </div>
+
+            <div class="core-idea fade-in">
+                <div class="idea-icon">&#128161;</div>
+                <p>Weighing deception's pros and cons, exploring beyond black-and-white rules.</p>
+            </div>
+
+            <!-- Interactive moral spectrum -->
+            <div class="moral-spectrum fade-in">
+                <h3>The Moral Spectrum</h3>
+                <p class="spectrum-hint">Drag the slider to explore the gray zone</p>
+                <div class="spectrum-bar">
+                    <div class="spectrum-track">
+                        <input type="range" id="moralSlider" min="0" max="100" value="50" class="spectrum-slider">
+                        <div class="spectrum-fill" id="spectrumFill"></div>
+                    </div>
+                    <div class="spectrum-labels">
+                        <span class="label-good">&#128519; Rule-Follower</span>
+                        <span class="label-gray">&#129300; Gray Zone</span>
+                        <span class="label-bad">&#128520; Rule-Breaker</span>
+                    </div>
+                </div>
+                <div class="spectrum-scenario" id="spectrumScenario">
+                    <p>Most gaming moments live in the gray zone &mdash; where real learning happens.</p>
+                </div>
+            </div>
+
+            <div class="ethics-examples fade-in">
+                <div class="ethics-card">
+                    <div class="ethics-who">Liam</div>
+                    <p>GuildWeaver builds empires through trust. ShadowStriker trolls for laughs. Leads pranks over voice, but guild trust empowers.</p>
+                    <div class="ethics-tension">
+                        <span class="tension-label">Tension:</span> Building trust vs. exploiting it
+                    </div>
+                </div>
+                <div class="ethics-card">
+                    <div class="ethics-who">Jackson</div>
+                    <p>Joins hesitantly in Among Us sabotages or Sims manipulations. Targeting younger players stirs guilt.</p>
+                    <div class="ethics-tension">
+                        <span class="tension-label">Debate:</span> "Was that fair, bro?"
+                    </div>
+                </div>
+            </div>
+
+            <div class="dlc-layer fade-in">
+                <div class="dlc-badge">SASK DLC</div>
+                <p>"Digital citizenship" lessons warn against bullying, clashing with play's freedom. Black-and-white pledges vs. shades: skip a post for a win? Autonomy in private reflections during prairie bus rides.</p>
+            </div>
+
+            <div class="comparison-block fade-in">
+                <div class="compare-school">
+                    <h4>&#127979; School Says</h4>
+                    <p>"Don't lie." Clear rules, no exceptions.</p>
+                </div>
+                <div class="compare-vs">VS</div>
+                <div class="compare-game">
+                    <h4>&#127918; Games Teach</h4>
+                    <p>Blur morals &mdash; glee from wins, guilt from betrayals. Life dispenses nuance via discussions.</p>
+                </div>
+            </div>
+
+            <div class="payoff fade-in">
+                <h4>&#127942; Real-World Payoff</h4>
+                <p>Preps for politics' mazes (bend truth for goals). Builds flexibility without judgment, logging ethics from all corners.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conclusion</span>
+                <h2 class="section-title">The Bigger Picture</h2>
+            </div>
+
+            <div class="conclusion-content fade-in">
+                <div class="big-statement">
+                    <p>Liam and Jackson aren't wasting time &mdash; they're forging a <strong>"networked self"</strong>: adaptability, vigilance, creativity across games and Sask remote's grind.</p>
+                </div>
+
+                <div class="takeaway-grid">
+                    <div class="takeaway-card">
+                        <div class="takeaway-icon">&#127979;</div>
+                        <h4>Schools Handle</h4>
+                        <p>Reading, math, basics</p>
+                    </div>
+                    <div class="takeaway-card accent-card">
+                        <div class="takeaway-icon">&#127918;</div>
+                        <h4>Games Deliver</h4>
+                        <p>Trials with no safety nets, balancing pulls for true autonomy</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <div class="takeaway-icon">&#128640;</div>
+                        <h4>The Payoff</h4>
+                        <p>Adult edge where cunning beats candor, amplified by brotherly code over distance</p>
+                    </div>
+                </div>
+
+                <div class="final-statement fade-in">
+                    <blockquote>
+                        In a post-truth world, these kids simulate statecraft early.
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="references fade-in">
+                <h4>References</h4>
+                <ul>
+                    <li>Saskatchewan Education remote learning guidelines (2025-2026)</li>
+                    <li>Gaming studies on identity (Pew Research on digital literacy, 2024)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">&#9670;</span>
+                    PROTO<span class="accent">POLITICS</span>
+                </div>
+                <p>Gaming as Proto-Politics: Non-School Skills in a Remote Learning World</p>
+                <p class="footer-location">Saskatchewan, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
